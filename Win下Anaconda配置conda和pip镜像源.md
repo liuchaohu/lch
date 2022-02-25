@@ -1,10 +1,12 @@
 # 配置pip
-在用户路径下创建`pip.ini`文件，文件编码使用默认或GB2312，输入
+在文件管理器搜索`%APPDATA%`，创建一个文件夹`pip`，然后在这个文件夹下编辑`pip.ini`文件，文件编码使用默认或GB2312，输入
 
 ```
 [global]
-trusted-host=pypi.doubanio.com              #豆瓣源，可以换成其他的源
-index-url=https://pypi.doubanio.com/simple/ #添加豆瓣源为可信主机，要不然可能报错
+timeout = 6000
+index-url = http://mirrors.aliyun.com/pypi/simple/
+trusted-host = mirrors.aliyun.com
+
 ```
 
 # 配置conda源
