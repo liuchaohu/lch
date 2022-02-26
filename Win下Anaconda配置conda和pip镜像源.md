@@ -6,8 +6,11 @@
 timeout = 6000
 index-url = http://mirrors.aliyun.com/pypi/simple/
 trusted-host = mirrors.aliyun.com
-
 ```
+
+# 翻墙的时候无法使用Pip
+因为pip的版本太高，降低版本即可
+`python -m pip install pip==10.0.1`
 
 # 配置conda源
 在cmd中输入`conda config --show channels` 即可查看当前使用的镜像源
